@@ -19,5 +19,25 @@ else if(hacker1.length<hacker2.length){
 
 else {console.log("Wow, you both have equally long names, "+hacker1.length+" characters!");}
 
-
 // Iteration 3: Loops
+
+let hacker1v2="";
+
+for(let i=0 ; i<hacker1.length ; i++){
+    hacker1v2+= hacker1[i]+" ";
+}
+
+console.log(hacker1v2.toUpperCase());
+
+let hacker2v2="";
+
+for(let i=hacker2.length-1 ; i>=0 ; i--){
+    hacker2v2+= hacker2[i];
+}
+
+console.log(hacker2v2);
+
+if (hacker2<hacker1){console.log("The driver's name goes first.")}
+else if(hacker1<hacker2){console.log("Yo, the navigator goes first definitely.")}
+else {"What?! You both have the same name?"}
+    
